@@ -10,14 +10,7 @@ import {
   CardTitle,
 } from "./components/ui/card";
 import { Icons } from "@/components/icons/icons";
-import {
-  Mail,
-  EyeIcon,
-  LucideSquareArrowOutUpRight,
-  Link2,
-  ListCollapseIcon,
-} from "lucide-react";
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { SunIcon } from "@radix-ui/react-icons";
 import {
   Carousel,
   CarouselContent,
