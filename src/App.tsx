@@ -104,7 +104,7 @@ function App() {
                 <CarouselItem>
                   <div className="flex flex-wrap gap-4">
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
                       onClick={() => {
                         toast({
                           title: "coldrain-f > Tasktrek Todo's",
@@ -152,7 +152,7 @@ function App() {
                     </Card>
 
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
                       onClick={() => {
                         toast({
                           title: "coldrain-f > Tasktrek Chat",
@@ -204,7 +204,7 @@ function App() {
                 <CarouselItem>
                   <div className="flex flex-wrap gap-4">
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
                       onClick={() => {
                         toast({
                           title: "coldrain-f > Tasktrek Calendar",
@@ -260,7 +260,7 @@ function App() {
                 <CarouselItem>
                   <div className="flex flex-wrap gap-4">
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
                       onClick={() => {
                         toast({
                           title: "ksinny > Tasktrek Todo's",
@@ -326,7 +326,7 @@ function App() {
         <Separator className="my-4" />
         <div className="flex gap-4">
           <div
-            className="leading-7 w-1/2 p-5 border rounded-md hover:bg-stone-100 shadow-md cursor-pointer"
+            className="leading-7 w-1/2 p-5 border rounded-md hover:bg-stone-100 shadow-sm cursor-pointer"
             onClick={() => {
               window.open("https://github.com/coldrain-f");
             }}
@@ -349,7 +349,7 @@ function App() {
           </div>
 
           <div
-            className="leading-7 w-1/2 p-5 border rounded-md hover:bg-stone-100 shadow-md cursor-pointer"
+            className="leading-7 w-1/2 p-5 border rounded-md hover:bg-stone-100 shadow-sm cursor-pointer"
             onClick={() => {
               window.open("https://github.com/Ksinny");
             }}
