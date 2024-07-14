@@ -104,7 +104,7 @@ function App() {
                 <CarouselItem>
                   <div className="flex flex-wrap gap-4">
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
                       onClick={() => {
                         toast({
                           title: "coldrain-f > Tasktrek Todo's",
@@ -119,8 +119,9 @@ function App() {
                           Tasktrek Todo's
                         </CardTitle>
                         <CardDescription>
-                          할 일 관리 프로젝트로, 데이터베이스와 연동하여 CRUD,
-                          페이징, 검색 및 필터링 기능을 개발하였습니다.
+                          심플한 할 일 관리 서비스입니다. 데이터베이스와
+                          연동하여 CRUD, 페이징, 검색 및 필터링 기능 등이
+                          있습니다.
                         </CardDescription>
                       </CardHeader>
 
@@ -134,11 +135,11 @@ function App() {
                           <div>React</div>
                           <Separator orientation="vertical" />
                           <div>shadcn/ui</div>
+                          <Separator orientation="vertical" />
+                          <div>Java</div>
                         </div>
 
                         <div className="flex h-5 items-center space-x-3 text-sm mt-2">
-                          <div>Java</div>
-                          <Separator orientation="vertical" />
                           <div>Spring</div>
                           <Separator orientation="vertical" />
                           <div>JPA</div>
@@ -151,7 +152,7 @@ function App() {
                     </Card>
 
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
                       onClick={() => {
                         toast({
                           title: "coldrain-f > Tasktrek Chat",
@@ -166,7 +167,8 @@ function App() {
                           Tasktrek Chat
                         </CardTitle>
                         <CardDescription>
-                          A server-side chat project utilizing web sockets.
+                          Socket을 활용한 채팅 서비스입니다. 최근 채팅 내역을
+                          Redis로 캐싱하여 보여줍니다.
                         </CardDescription>
                       </CardHeader>
 
@@ -174,21 +176,25 @@ function App() {
                         <h3 className="scroll-m-20 text-base font-semibold tracking-tight text-slate-700 mb-2">
                           Skills
                         </h3>
-                        <div className="flex h-5 items-center space-x-4 text-sm">
-                          <div>React</div>
-                          <Separator orientation="vertical" />
+                        <div className="flex h-5 items-center space-x-3 text-sm">
                           <div>Typescript</div>
                           <Separator orientation="vertical" />
+                          <div>React</div>
+                          <Separator orientation="vertical" />
                           <div>shadcn/ui</div>
-                        </div>
-                        <div className="flex h-5 items-center space-x-4 text-sm mt-2">
-                          <div>Spring Boot</div>
                           <Separator orientation="vertical" />
                           <div>Java</div>
+                        </div>
+                        <div className="flex h-5 items-center space-x-3 text-sm mt-2">
+                          <div>Spring</div>
                           <Separator orientation="vertical" />
                           <div>JPA</div>
                           <Separator orientation="vertical" />
-                          <div>Web Socket</div>
+                          <div>QueryDSL</div>
+                          <Separator orientation="vertical" />
+                          <div>MariaDB</div>
+                          <Separator orientation="vertical" />
+                          <div>Socket</div>
                         </div>
                       </CardContent>
                     </Card>
@@ -198,7 +204,7 @@ function App() {
                 <CarouselItem>
                   <div className="flex flex-wrap gap-4">
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
                       onClick={() => {
                         toast({
                           title: "coldrain-f > Tasktrek Calendar",
@@ -219,19 +225,25 @@ function App() {
                         <h3 className="scroll-m-20 text-base font-semibold tracking-tight text-slate-700 mb-2">
                           Skills
                         </h3>
-                        <div className="flex h-5 items-center space-x-4 text-sm">
-                          <div>React</div>
-                          <Separator orientation="vertical" />
+                        <div className="flex h-5 items-center space-x-3 text-sm">
                           <div>Typescript</div>
                           <Separator orientation="vertical" />
+                          <div>React</div>
+                          <Separator orientation="vertical" />
                           <div>shadcn/ui</div>
-                        </div>
-                        <div className="flex h-5 items-center space-x-4 text-sm mt-2">
-                          <div>Spring Boot</div>
                           <Separator orientation="vertical" />
                           <div>Java</div>
+                        </div>
+                        <div className="flex h-5 items-center space-x-3 text-sm mt-2">
+                          <div>Spring</div>
                           <Separator orientation="vertical" />
                           <div>JPA</div>
+                          <Separator orientation="vertical" />
+                          <div>QueryDSL</div>
+                          <Separator orientation="vertical" />
+                          <div>MariaDB</div>
+                          <Separator orientation="vertical" />
+                          <div>Socket</div>
                         </div>
                       </CardContent>
                     </Card>
@@ -248,7 +260,7 @@ function App() {
                 <CarouselItem>
                   <div className="flex flex-wrap gap-4">
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
                       onClick={() => {
                         toast({
                           title: "ksinny > Tasktrek Todo's",
@@ -263,8 +275,9 @@ function App() {
                           Tasktrek Todo's
                         </CardTitle>
                         <CardDescription>
-                          할 일 관리 프로젝트로, 데이터베이스와 연동하여 CRUD,
-                          페이징, 검색 및 필터링 기능을 개발하였습니다.
+                          심플한 할 일 관리 서비스입니다. 데이터베이스와
+                          연동하여 CRUD, 페이징, 검색 및 필터링 기능 등이
+                          있습니다.
                         </CardDescription>
                       </CardHeader>
 
@@ -279,11 +292,11 @@ function App() {
                           <div>React</div>
                           <Separator orientation="vertical" />
                           <div>shadcn/ui</div>
+                          <Separator orientation="vertical" />
+                          <div>Java</div>
                         </div>
 
                         <div className="flex h-5 items-center space-x-3 text-sm mt-2">
-                          <div>Java</div>
-                          <Separator orientation="vertical" />
                           <div>Spring</div>
                           <Separator orientation="vertical" />
                           <div>JPA</div>
@@ -313,7 +326,7 @@ function App() {
         <Separator className="my-4" />
         <div className="flex gap-4">
           <div
-            className="leading-7 w-1/2 p-5 border rounded-md hover:bg-stone-100 shadow-sm cursor-pointer"
+            className="leading-7 w-1/2 p-5 border rounded-md hover:bg-stone-100 shadow-md cursor-pointer"
             onClick={() => {
               window.open("https://github.com/coldrain-f");
             }}
@@ -336,7 +349,7 @@ function App() {
           </div>
 
           <div
-            className="leading-7 w-1/2 p-5 border rounded-md hover:bg-stone-100 shadow-sm cursor-pointer"
+            className="leading-7 w-1/2 p-5 border rounded-md hover:bg-stone-100 shadow-md cursor-pointer"
             onClick={() => {
               window.open("https://github.com/Ksinny");
             }}
