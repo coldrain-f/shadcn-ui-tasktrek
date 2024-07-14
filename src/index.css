@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,10 @@
   /* 전역 기본 폰트 설정 */
   html {
     font-family: "Noto Sans KR";
+    /* font-family: "Montserrat"; */
+  }
+  .font-family-inter {
+    font-family: "Inter";
   }
 
   :root {
