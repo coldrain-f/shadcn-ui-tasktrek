@@ -23,7 +23,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
 function App() {
   return (
     <>
-      <div className="w-screen border h-12 shadow-sm">
+      <div className="w-screen border h-12 shadow-sm sticky top-0 bg-white">
         <div className="container mx-auto w-[800px] p-2">
           <div className="flex justify-between">
             <div>
