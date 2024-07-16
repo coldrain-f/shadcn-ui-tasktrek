@@ -29,7 +29,8 @@ function App() {
 
   return (
     <>
-      <div className="w-screen border h-12 shadow-sm bg-white sticky top-0">
+      {/* Begin:: Navbar  */}
+      <div className="w-full border h-12 shadow-sm bg-white sticky top-0">
         <div className="container mx-auto w-[800px] p-2">
           <div className="flex justify-between">
             <a
@@ -56,10 +57,12 @@ function App() {
           </div>
         </div>
       </div>
+      {/* End:: Navbar */}
+
       <div className="container mx-auto w-[800px] p-4">
         <div>
           <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight text-stone-700 mt-1">
-            팀 소개
+            소개
           </h3>
           <Separator className="my-4" />
 
