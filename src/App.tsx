@@ -6,6 +6,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -30,7 +31,7 @@ function App() {
   return (
     <>
       {/* Begin:: Navbar  */}
-      <div className="w-full border h-12 shadow-sm bg-white sticky top-0">
+      <div className="w-full border h-12 shadow-md bg-white sticky top-0">
         <div className="container mx-auto w-[800px] p-2">
           <div className="flex justify-between">
             <a
@@ -107,7 +108,7 @@ function App() {
                 <CarouselItem>
                   <div className="flex flex-wrap gap-4">
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
                       onClick={() => {
                         toast({
                           title: "coldrain-f > Tasktrek Todo's",
@@ -118,7 +119,7 @@ function App() {
                       }}
                     >
                       <CardHeader>
-                        <CardTitle className="text-stone-700">
+                        <CardTitle className="text-stone-700 text-xl">
                           Tasktrek Todo's
                         </CardTitle>
                         <CardDescription>
@@ -155,7 +156,7 @@ function App() {
                     </Card>
 
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
                       onClick={() => {
                         toast({
                           title: "coldrain-f > Tasktrek Chat",
@@ -166,7 +167,7 @@ function App() {
                       }}
                     >
                       <CardHeader>
-                        <CardTitle className="text-stone-700">
+                        <CardTitle className="text-stone-700 text-xl">
                           Tasktrek Chat
                         </CardTitle>
                         <CardDescription>
@@ -207,7 +208,7 @@ function App() {
                 <CarouselItem>
                   <div className="flex flex-wrap gap-4">
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
                       onClick={() => {
                         toast({
                           title: "coldrain-f > Tasktrek Calendar",
@@ -218,7 +219,7 @@ function App() {
                       }}
                     >
                       <CardHeader>
-                        <CardTitle className="text-stone-700">
+                        <CardTitle className="text-stone-700 text-xl">
                           Tasktrek Calendar
                         </CardTitle>
                         <CardDescription>coming soon...</CardDescription>
@@ -263,7 +264,7 @@ function App() {
                 <CarouselItem>
                   <div className="flex flex-wrap gap-4">
                     <Card
-                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-sm"
+                      className="w-[376px] hover:bg-stone-50 cursor-pointer shadow-md"
                       onClick={() => {
                         toast({
                           title: "ksinny > Tasktrek Todo's",
@@ -274,7 +275,7 @@ function App() {
                       }}
                     >
                       <CardHeader>
-                        <CardTitle className="text-stone-700">
+                        <CardTitle className="text-stone-700 text-xl">
                           Tasktrek Todo's
                         </CardTitle>
                         <CardDescription>
@@ -319,62 +320,139 @@ function App() {
           </TabsContent>
         </Tabs>
 
+        {/* Begin:: 팀원 소개 영역  */}
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight text-stone-700 mt-6">
-          개발자
+          팀원
         </h3>
         <p className="text-sm text-muted-foreground mt-1.5 mb-5">
-          프로젝트에 참여한 개발자의 Github 링크로 이동할 수 있습니다.
+          프로젝트에 참여한 팀원의 블로그와 Github 링크로 이동할 수 있습니다.
         </p>
 
         <Separator className="my-4" />
         <div className="flex gap-4">
-          <div
-            className="leading-7 w-1/2 p-5 border rounded-md hover:bg-stone-100 shadow-sm cursor-pointer"
-            onClick={() => {
-              window.open("https://github.com/coldrain-f");
-            }}
-          >
-            <p className="mb-3 font-semibold">coldrain-f</p>
-            <div className="flex">
-              <Avatar className="mr-2 mt-[1px]">
-                <AvatarImage src="https://ui.shadcn.com/avatars/02.png" />
-                <AvatarFallback>SW</AvatarFallback>
-              </Avatar>
-              <div>
-                <p className="text-sm text-muted-foreground">
-                  +82 10-2907-5569
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  sangwoonin@gmail.com
-                </p>
+          {/* Begin:: 팀원1 Card */}
+          <Card className="leading-7 w-[373.56px] shadow-md">
+            <CardHeader>
+              <CardTitle className="text-xl text-stone-700 ">
+                coldrain-f
+              </CardTitle>
+              <CardDescription>
+                더블릿의 "천천히 흘러가도 흘러가야 합니다"라는 말을 좌우명 삼아
+                조금씩 꾸준히 나아가고 있습니다.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex">
+                <Avatar className="mr-2 mt-[1px]">
+                  <AvatarImage src="https://avatars.githubusercontent.com/u/81298415?v=4" />
+                  <AvatarFallback>SW</AvatarFallback>
+                </Avatar>
+                <div>
+                  <p className="text-sm text-muted-foreground">
+                    +82 10-2907-5569
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    <a
+                      href="mailto:sangwoonin@gmail.com"
+                      className="underline text-slate-700"
+                    >
+                      sangwoonin@gmail.com
+                    </a>
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
+            </CardContent>
+            <CardFooter>
+              <div className="flex gap-4">
+                <Button
+                  className="w-[152px] bg-stone-700"
+                  onClick={() => {
+                    window.open("https://github.com/coldrain-f");
+                  }}
+                >
+                  <Icons.gitHub className="h-4 w-4 mr-2" />
+                  Github
+                </Button>
+                <Button
+                  className="w-[152px]"
+                  variant="outline"
+                  onClick={() => {
+                    window.open("https://mellowresearch.com/");
+                  }}
+                >
+                  <Icons.logo className="h-4 w-4 mr-2" />
+                  블로그
+                </Button>
+              </div>
+            </CardFooter>
+          </Card>
+          {/* End:: 팀원1 Card */}
 
-          <div
-            className="leading-7 w-1/2 p-5 border rounded-md hover:bg-stone-100 shadow-sm cursor-pointer"
-            onClick={() => {
-              window.open("https://github.com/Ksinny");
-            }}
-          >
-            <div className="flex">
-              <p className="mb-3 font-semibold">ksinny</p>
-            </div>
-            <div className="flex">
-              <Avatar className="mr-2 mt-[1px]">
-                <AvatarImage src="https://ui.shadcn.com/avatars/01.png" />
-                <AvatarFallback>KS</AvatarFallback>
-              </Avatar>
-              <div>
-                <p className="text-sm text-muted-foreground">
-                  +82 10-0000-0000
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  ksinny@gmail.com
-                </p>
+          {/* Begin:: 팀원2 Card */}
+          {/* Begin:: 팀원1 Card */}
+          <Card className="leading-7 w-[373.56px] shadow-md">
+            <CardHeader>
+              <CardTitle className="text-xl text-stone-700 ">ksinny</CardTitle>
+              <CardDescription>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex">
+                <Avatar className="mr-2 mt-[1px]">
+                  <AvatarImage src="https://avatars.githubusercontent.com/u/102038572?v=4" />
+                  <AvatarFallback>SW</AvatarFallback>
+                </Avatar>
+                <div>
+                  <p className="text-sm text-muted-foreground">
+                    +82 10-0000-0000
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    <a
+                      href="mailto:sangwoonin@gmail.com"
+                      className="underline text-slate-700"
+                    >
+                      ksinny@gmail.com
+                    </a>
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
+            </CardContent>
+            <CardFooter>
+              <div className="flex gap-4">
+                <Button
+                  className="w-[152px] bg-stone-700"
+                  onClick={() => {
+                    window.open("https://github.com/Ksinny");
+                  }}
+                >
+                  <Icons.gitHub className="h-4 w-4 mr-2" />
+                  Github
+                </Button>
+                <Button
+                  className="w-[152px]"
+                  variant="outline"
+                  onClick={() => {
+                    // window.open("https://mellowresearch.com/");
+                  }}
+                >
+                  <Icons.logo className="h-4 w-4 mr-2" />
+                  블로그
+                </Button>
+              </div>
+            </CardFooter>
+          </Card>
+          {/* End:: 팀원2 Card */}
+        </div>
+        {/* End:: 팀원 소개 영역  */}
+      </div>
+      <div className="w-full bg-stone-100 h-12 flex items-center border-t mt-8 p-7 ps-0">
+        <div className="container mx-auto w-[800px] text-sm text-stone-700">
+          <p className="font-family-inter">
+            Copyright ©2024; Developed by{" "}
+            <span className="font-semibold">coldrain-f</span>
+          </p>
         </div>
       </div>
       <Toaster />
