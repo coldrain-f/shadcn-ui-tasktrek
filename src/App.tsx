@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       {/* Begin:: Navbar  */}
-      <div className="w-full border h-12 shadow-md bg-white sticky top-0">
+      <div className="w-full h-12 shadow-md bg-white sticky top-0">
         <div className="container mx-auto w-[800px] p-2">
           <div className="flex justify-between">
             <a
@@ -94,7 +94,9 @@ function App() {
           프로젝트
         </h3>
         <p className="text-sm text-muted-foreground mt-1.5 mb-5">
-          프로젝트의 Github 저장소로 이동할 수 있습니다.
+          프로젝트의 Github 저장소로 이동할 수 있습니다. <br /> 모든 프로젝트는
+          동일한 UI를 가지고 백엔드 시스템을 각자 직접 구축해 보는 것을 목표로
+          했습니다.
         </p>
         <Separator className="my-4" />
         <Tabs defaultValue="coldrain-f">
@@ -406,7 +408,7 @@ function App() {
                 </Avatar>
                 <div>
                   <p className="text-sm text-muted-foreground">
-                    +82 10-0000-0000
+                    +82 10-3346-8255
                   </p>
                   <p className="text-sm text-muted-foreground">
                     <a
